@@ -1,0 +1,169 @@
+:root {
+    --primary: #f44336;
+    --second: #f78a8b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+.raiden__container {
+    position: relative;
+}
+
+.container__left {
+    width: 20%;
+    height: 706px;
+    padding: 10px 25px;
+    background-color: var(--primary);
+    position: fixed;
+}
+
+.container__left .left__title h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 90px 10px;
+}
+
+.left__navBar {
+    margin-top: 20px;
+}
+
+.left__navBar .navbar__title a{
+    color: #fff;
+    line-height: 2.6;
+}
+
+/* =================== Right ============== */
+.container__right {
+    position: absolute;
+    right: 0;
+    width: 80%;
+    padding-left: 40px;
+}
+
+.container__right h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+/* ======== Show Case ======== */
+
+.showCase  h2,
+.serVices h2,
+.Designers h2{
+    font-size: 25px;
+    color: var(--second);
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.showCase h2::after,
+.serVices h2::after,
+.Designers h2::after {
+    content: '';
+    position: absolute;
+    border-bottom: 6px solid var(--primary);
+    width: 45px;
+    height: 35px;
+    left: 0;
+    border-radius: 5px;
+}
+
+.showCase__img {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.showCase__img img {
+    height: 300px;
+    width: 540px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+/*  ================= SerVices ============ */
+.serVices h2,
+.Designers h2{
+    margin-top: 50px;
+}
+
+.serVices p {
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+/* =============== Desingers ============ */
+
+
+.designer__title span {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.designer__title p {
+    margin: 20px 0;
+}
+
+.designer__title h4 {
+    font-weight: bold;
+}
+
+.designers__person {
+    margin-top: 20px;
+}
+
+.place-item {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
+}
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+    background-color: #f1f1f1;
+}
+.place-heading {
+    font-size: 15px;
+    font-weight: 900;
+}
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+.place-desc {
+    line-height: 1.4;
+    margin: 32px 0;
+}
